@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #fff ;
+}
+
+h1{
+    margin-top: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+  margin-top: 25px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 350px;
+}
+button{
+    margin-top: 75px;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.outer-box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+    .outer-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+}
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    padding: 15px 250px;
+    font-size: 15px;
+    
+}
+
+.left-card{
+    background-color: hsl(31, 77%, 52%);
+    padding : 50px 25px;
+    border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      
+    }
+    
+    .center-card{
+        background-color: hsl(184, 100%, 22%);
+        padding : 50px 25px;
+    }
+    
+    .right-card{
+        background-color: hsl(179, 100%, 13%);
+        padding : 50px 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .left-card-btn{
+        background-color: hsl(31, 77%, 52%);
+
+    }
+
+    .left-card-btn:hover {
+        background-color: #fff;
+        color: hsl(31, 77%, 52%);
+        transition: 400ms;
+    }
+    
+    .center-card-btn{
+        background-color: hsl(184, 100%, 22%);
+       
+  }
+  .center-card-btn:hover{
+      background-color: #fff;
+      color: hsl(184, 100%, 22%);;
+      transition: 400ms;
+  }
+  
+  .right-card-btn{
+      background-color: hsl(179, 100%, 13%);
+ 
+    }
+    .right-card-btn:hover{
+        background-color: #fff;
+        color: hsl(179, 100%, 13%);
+        transition: 400ms;
+        
+    }
+    @media only screen and (max-width: 768px){
+      .container{
+          display: grid; 
+           grid-template-columns: 1fr; 
+           padding: 10px 15px;
+           gap: 0px 0px; 
+      }
+    
+      .left-card{
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 0px;
+      }
+     
+      .right-card{
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 10px;
+      }
+    }
+    
+    .footer-txt{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+.footer-txt a{
+    color: black !important;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
