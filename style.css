@@ -130,7 +130,7 @@ button{
         max-width: 100%;
     }
 
-.footer-txt a{
+.footer-txt{
     color: black !important;
     text-decoration: none;
     font-weight: 700;
